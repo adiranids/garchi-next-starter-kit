@@ -1,6 +1,6 @@
 // dynamic component loader for Garchi components
 
-import { GarchiSection } from '@/types/garchi'
+import { GarchiSection } from '@garchicms/garchi-node-sdk'
 import dynamic from 'next/dynamic'
 import React from 'react'
 

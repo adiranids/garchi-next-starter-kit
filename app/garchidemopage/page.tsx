@@ -1,5 +1,5 @@
 import Page from '@/components/garchi/Page'
-import React from 'react'
+
 
 type Props = {}
 

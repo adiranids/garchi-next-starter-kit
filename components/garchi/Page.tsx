@@ -1,5 +1,6 @@
 // server component
-import garchiHelper from "@/utils/garchi"
+
+import { garchi } from "@/utils/garchi"
 import GarchiComponent from "./GarchiComponent"
 
 type Props = {
@@ -8,7 +9,12 @@ type Props = {
 
 export default async function Page({slug}: Props) {
 
-  const page = await garchiHelper.getGarchiPage("your space uid", "draft", slug)
+
+  const page = await garchi.headless.getPage({
+    slug,
+    space_uid: "your space uid",
+    mode: "draft",
+  })
    
   return (
     <>
